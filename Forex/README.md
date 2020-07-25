@@ -28,7 +28,7 @@ It is also a bit surprising to see the correlation between AUD and crude oil pri
 
 **2000 - 2009:**
 
-![image-20200725211545706](D:\GitHub\DataScienceProjects\Forex\Images\2000-2009 Correlation.png)
+![image](https://github.com/vinceamaz/DataScienceProjects/blob/master/Forex/Images/2000-2009%20Correlation.png)
 
 **2010-2020:**
 
