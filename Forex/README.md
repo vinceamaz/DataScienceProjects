@@ -28,15 +28,15 @@ It is also a bit surprising to see the correlation between AUD and crude oil pri
 
 **2000 - 2009:**
 
-![image-20200725211545706](D:\GitHub\DataScienceProjects\Forex\Images\2000-2009 Correlation.png)
+![image](https://github.com/vinceamaz/DataScienceProjects/blob/master/Forex/Images/2000-2009%20Correlation.png)
 
 **2010-2020:**
 
-![image-20200725211613044](D:\GitHub\DataScienceProjects\Forex\Images\2010-2020 Correlation.png)
+![image](https://github.com/vinceamaz/DataScienceProjects/blob/master/Forex/Images/2010-2020%20Correlation.png)
 
 **Line plot of highly correlated features:**
 
-![image-20200725211652975](D:\GitHub\DataScienceProjects\Forex\Images\Trend of features.png)
+![image](https://github.com/vinceamaz/DataScienceProjects/blob/master/Forex/Images/Trend%20of%20features.png)
 
 ## Model Structures
 
@@ -61,13 +61,13 @@ For 1 day prediction, the model is only able to align with the overall trending 
 
 **1 day prediction of model with attention:**
 
-![image-20200725214146139](D:\GitHub\DataScienceProjects\Forex\Images\1 day prediction output)
+![image](https://github.com/vinceamaz/DataScienceProjects/blob/master/Forex/Images/1%20day%20prediction%20output)
 
 For 5 day prediction, I've sampled a few random dates in history to test the model. It turns out the model's outputs are consistently disappointing compared with the ground truth. One of the samples is shown below:
 
 **5 day prediction of model with attention:**
 
-![image-20200725214500577](D:\GitHub\DataScienceProjects\Forex\Images\5 day prediction output)
+![image](https://github.com/vinceamaz/DataScienceProjects/blob/master/Forex/Images/5%20day%20prediction%20output)
 
 ## Conclusion
 
