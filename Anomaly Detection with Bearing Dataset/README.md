@@ -38,7 +38,7 @@ The processed data look like below:
 
 If we plot all 984 data points of the 4 bearings individually, we can see the chart below. It looks like Bearing 1 started to have some abnormal trend after 2004-02-16 while others still behaved quite normal until after 2004-02-18. In traditional SPC, if we are unlucky, we may not have selected Bearing 1 to be monitored and may not have detected any issue before 2004-02-19, when a breakdown event actually occurred.
 
-
+![image](https://github.com/vinceamaz/DataScienceProjects/blob/master/Anomaly%20Detection%20with%20Bearing%20Dataset/Images/Raw%20meansurements.PNG)
 
 For the purpose of model training, the data was split into training set (222 observations) and test set (760 observations).
 
