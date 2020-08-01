@@ -95,13 +95,13 @@ Note of caution: Use of the MD implies that inference can be done through the me
 
 From the distribution below, we can set the anomaly threshold to be 4 standard deviations from mean of training data's Mahalanobis distances. I actually set the limit based on 4 standard deviations instead of 3 based on the observed distribution of training data to avoid false alarms due to overly tight control limit. The concept is similar to SPC, where the threshold of 4 standard deviations from mean is served as an upper control limit. 
 
-
+![image](https://github.com/vinceamaz/DataScienceProjects/blob/master/Anomaly%20Detection%20with%20Bearing%20Dataset/Images/Mahalanobis%20distance%20distribution%20of%20training%20data.PNG)
 
 ### 3.3 Mahalanobis distances of all data
 
 The chart below shows that we can detect anomaly between 2004-02-16 to 2004-02-17 without the risk of missing Bearing 1 as opposed to SPC. That's 2 days before when the breakdown actually occurred, on 2004-02-19.
 
-
+![image](https://github.com/vinceamaz/DataScienceProjects/blob/master/Anomaly%20Detection%20with%20Bearing%20Dataset/Images/Mahalanobis%20distances%20of%20all%20data.PNG)
 
 ## 4. Autoencoder model for anomaly detection
 
@@ -109,7 +109,7 @@ The chart below shows that we can detect anomaly between 2004-02-16 to 2004-02-1
 
 An autoencoder is a type of artificial neural network used to learn efficient data encodings in an unsupervised manner. The aim of an autoencoder is to learn a representation (encoding) for a set of data, typically for dimensionality reduction. Along with the reduction side, a reconstructing side is learnt, where the autoencoder tries to generate from the reduced encoding a representation as close as possible to its original input.
 
-
+![image](https://github.com/vinceamaz/DataScienceProjects/blob/master/Anomaly%20Detection%20with%20Bearing%20Dataset/Images/AutoEncoder.jpeg)
 
 In our use case, what we would do is to plot the distribution of the reconstruction loss of the autoencoder for training data to identify where normally reconstruction loss lies and come up with a threshold as the upper control limit. One can also compute the 3 standard deviations from the mean of reconstruction loss to determine an appropriate upper control limit, like what we did in PCA with Mahalanobis distance modelling.
 
@@ -119,11 +119,13 @@ By plotting the distribution of the calculated loss in the training set, one can
 
 From our result, we can use a threshold of 0.3 for flagging an anomaly. We can then calculate the loss in the test set, to check when the output crosses the anomaly threshold.
 
+![image](https://github.com/vinceamaz/DataScienceProjects/blob/master/Anomaly%20Detection%20with%20Bearing%20Dataset/Images/AutoEncoder%20Training%20Loss.jpeg)
+
 ## 4.3 Autoencoder reconstruction loss of all data
 
 Similar to the PCA with Mahalanobis distance method, the chart below shows that we can detect anomaly in 2004-02-16. One can see that it detects anomaly slightly earlier than the PCA with Mahalanobis distance model. In real world issues, Autoencoder may perform better too since it doesn't have the assumption that the input data follows Gaussian distribution, which is a constraint of Mahalanobis distance.
 
-
+![image](https://github.com/vinceamaz/DataScienceProjects/blob/master/Anomaly%20Detection%20with%20Bearing%20Dataset/Images/Autoencoder%20Reconstruction%20Loss%20of%20all%20data.PNG)
 
 
 
