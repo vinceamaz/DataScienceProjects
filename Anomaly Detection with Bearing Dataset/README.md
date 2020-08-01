@@ -126,6 +126,3 @@ From our result, we can use a threshold of 0.3 for flagging an anomaly. We can t
 Similar to the PCA with Mahalanobis distance method, the chart below shows that we can detect anomaly in 2004-02-16. One can see that it detects anomaly slightly earlier than the PCA with Mahalanobis distance model. In real world issues, Autoencoder may perform better too since it doesn't have the assumption that the input data follows Gaussian distribution, which is a constraint of Mahalanobis distance.
 
 ![image](https://github.com/vinceamaz/DataScienceProjects/blob/master/Anomaly%20Detection%20with%20Bearing%20Dataset/Images/Autoencoder%20Reconstruction%20Loss%20of%20all%20data.PNG)
-
-
-
